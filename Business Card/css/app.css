@@ -106,3 +106,16 @@ a {
         -webkit-transform: none;
             -ms-transform: none;
                 transform: none; } }
+
+.profile__image.is-offset {
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
+  -webkit-transform: translateX(-200px) !important;
+      -ms-transform: translateX(-200px) !important;
+          transform: translateX(-200px) !important; }
+  @media (max-width: 640px) {
+    .profile__image.is-offset {
+      -webkit-transform: translateY(0) !important;
+          -ms-transform: translateY(0) !important;
+              transform: translateY(0) !important; } }
+
