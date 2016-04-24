@@ -10,6 +10,7 @@
 html {
   height: 100%; }
 
+/**********************     BODY     **************************/
 body {
   height: 100%;
   overflow: hidden;
@@ -22,6 +23,8 @@ body {
     body {
       overflow-x: hidden;
       overflow-y: auto; } }
+
+/***********************    A - TAGS    ***********************/
 a {
   color: #e7be00;
   text-decoration: none;
@@ -33,3 +36,46 @@ a {
 .no-transition {
   -webkit-transition: none !important;
           transition: none !important; }
+
+/*******************   BACKGROUD MANENOZ   *******************/
+.background {
+  position: fixed;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: 0;
+  background-position: 50% 50%;
+  background-size: cover;
+  opacity: 0; }
+  .background:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: url("img/halftone.png");
+    background-repeat: repeat;
+    opacity: 0.25; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      .background:after {
+        background-image: url("img/halftone_2x.png");
+        background-size: 4px 4px; } }
+
+/*******************   PROFILE IMAGE   *******************/
+.profile__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  visibility: hidden; }
+  
