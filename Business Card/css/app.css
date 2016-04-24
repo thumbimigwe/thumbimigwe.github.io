@@ -1,0 +1,23 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  overflow: hidden;
+  background: #112936;
+  -webkit-perspective: 400;
+          perspective: 400;
+  color: #fff;
+  font-family: 'Roboto', sans-serif; }
+  @media (max-width: 640px) {
+    body {
+      overflow-x: hidden;
+      overflow-y: auto; } }
