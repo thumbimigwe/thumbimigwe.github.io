@@ -22,3 +22,14 @@ body {
     body {
       overflow-x: hidden;
       overflow-y: auto; } }
+a {
+  color: #e7be00;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+          transition: color 0.2s; }
+  a:hover {
+    color: #fff; }
+
+.no-transition {
+  -webkit-transition: none !important;
+          transition: none !important; }
