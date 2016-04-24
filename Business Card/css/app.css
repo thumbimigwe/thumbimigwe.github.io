@@ -91,3 +91,18 @@ a {
     border: 2px solid rgba(255, 255, 255, 0.25);
     pointer-events: none; }
  
+ .profile__image:hover .profile__image__inner {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+  @media (max-width: 640px) {
+    .profile__image {
+      width: 100px;
+      height: 100px;
+      margin-left: -50px;
+      margin-top: 0;
+      top: 30px; }
+      .profile__image:hover .profile__image__inner {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none; } }
