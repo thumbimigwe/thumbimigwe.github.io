@@ -205,8 +205,8 @@ a {
 
 /*******************    PROFILE LINKS   ********************/
 @media (max-width: 640px) {
-    profile__links {
-    border-top: 5px solid rgba(255, 255, 255, 0.1);
+.profile__links {
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
     padding-top: 10px; } }
 
 .profile__links a {
