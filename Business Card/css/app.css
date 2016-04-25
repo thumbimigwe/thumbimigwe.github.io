@@ -189,11 +189,20 @@ a {
   margin-top: 5px; }
 
 .profile__desc {
-  font-size: 18px;
+  font-size: 15px;
   color: #d3e7f2;
   font-weight: 300;
   margin: 5px 0 10px 0;
   height: 40px; }
+@media (max-width: 640px) {
+    .profile__desc {
+      height: auto;
+      line-height: 1.5em;
+      margin-top: 20px;
+      font-size: 20px;
+      margin-bottom: 20px; } }
 
-
+/*******************    PROFILE LINKS   ********************/
+@media (max-width: 640px) {
+    
 
