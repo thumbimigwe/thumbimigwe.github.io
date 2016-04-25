@@ -142,8 +142,8 @@ a {
   margin-left: -200px;
   width: 500px;
   height: 140px;
-  background-image: -webkit-linear-gradient(90deg, rgba(63, 93, 109, 0.5) 50%, rgba(67, 99, 115, 0.5) 50%);
-  background-image: linear-gradient(0deg, rgba(63, 93, 109, 0.5) 50%, rgba(67, 99, 115, 0.5) 50%);
+  background-image: -webkit-linear-gradient(90deg, rgba(63, 93, 109, 0.5) 50%, rgba(67, 99, 115, 0.5) 20%);
+  background-image: linear-gradient(0deg, rgba(63, 93, 109, 0.5) 50%, rgba(67, 99, 115, 0.5) 20%);
   -webkit-transform-origin: 0 50%;
       -ms-transform-origin: 0 50%;
           transform-origin: 0 50%;
@@ -155,4 +155,33 @@ a {
   overflow: hidden;
   -webkit-transform: rotateY(90deg);
           transform: rotateY(90deg); }
-  @media (max-width: 640px) 
+@media (max-width: 640px) {
+    .profile__card {
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      width: calc(100% - 40px);
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto 20px auto !important;
+      position: relative;
+      top: 20px;
+      left: auto;
+      padding-left: 10px;
+      padding-top: 120px;
+      text-align: center;
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      opacity: 0; } } 
+
+.profile__card.is-offset {
+  -webkit-transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  visibility: visible; }
+  @media (max-width: 640px) {
+    .profile__card.is-offset {
+      opacity: 1; } }
+
+
